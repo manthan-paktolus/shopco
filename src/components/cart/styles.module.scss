@@ -1,0 +1,73 @@
+button.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.button:hover {
+  background-color: #005bb5;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quant {
+  font-weight: bold;
+}
+
+h3.title {
+  font-size: large;
+}
+
+button.btn {
+  height: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid;
+}
+
+.msg {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 4rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.card {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-left: 4rem;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.totalPice {
+  margin: 20px;
+  padding-left: 41rem;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: underline;
+}

@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .children {
+    flex: 1;
+    width: 50%;
+  }
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.card__container {
+  padding: 0.25rem;
+}
+
+.card__content {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card__content__text {
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+  font-weight: 600;
+}
+
+.title {
+  font-size: medium;
+  color: #334155;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: x-large;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reviews {
+  color: gray;
+}
+
+.description {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: small;
+}
+
+.category,
+.stock,
+.brand {
+  font-weight: bold;
+}
+
+.category_name,
+.brand_name {
+  text-transform: capitalize;
+}
+
+.category_container,
+.brand_container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+button.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0070f3;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.button:hover {
+  background-color: #005bb5;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.price_num {
+  color: red;
+}
+
+.price_container {
+  margin-top: 1rem;
+}
+
+.discount {
+  font-size: smaller;
+  color: green;
+}
+
+.stock_container {
+  margin-bottom: 1rem;
+}

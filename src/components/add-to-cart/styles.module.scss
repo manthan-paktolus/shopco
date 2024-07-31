@@ -1,0 +1,45 @@
+button.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0070f3;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quant {
+  font-weight: bold;
+}
+
+button.button:hover {
+  background-color: #005bb5;
+}
+
+button.btn {
+  height: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid;
+}
+
+.toast {
+  &.toast {
+    background: black;
+    color: white;
+
+    .toastDescription {
+      color: var(--primary-foreground);
+    }
+
+    svg {
+      fill: #008000;
+    }
+  }
+}

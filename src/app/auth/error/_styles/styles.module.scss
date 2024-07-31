@@ -1,0 +1,42 @@
+div.container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #1f1e29;
+  background: rgb(249, 240, 240);
+  max-width: 300px;
+  margin: auto;
+
+  @media (min-width: 640px) {
+    min-width: 450px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-foreground);
+}
+
+.icon__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  color: var(--destructive);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-top: 1rem;
+}

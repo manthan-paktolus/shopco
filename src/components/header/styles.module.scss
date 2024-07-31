@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #a9a9a9;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+button.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #010a13;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.button:hover {
+  background-color: #4a4a4c;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+}
