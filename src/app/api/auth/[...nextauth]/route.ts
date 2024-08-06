@@ -31,7 +31,11 @@ export const authOptions: NextAuthOptions = {
           return null;
         }
 
-        return { id: user._id.toString(), email: user.email };
+        return {
+          id: user._id.toString(),
+          email: user.email,
+          username: user.username,
+        };
       },
     }),
   ],
@@ -39,8 +43,18 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     session: ({ session, token }) => ({
       ...session,
-      user: { ...session.user, id: token.sub },
+      user: {
+        ...session.user,
+        id: token.sub,
+        username: token.username,
+      },
     }),
+    jwt: ({ token, user }) => {
+      if (user) {
+        token.username = user.username;
+      }
+      return token;
+    },
   },
 };
 

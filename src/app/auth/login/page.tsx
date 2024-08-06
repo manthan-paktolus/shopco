@@ -10,10 +10,12 @@ type Props = {
 
 const LoginPage: NextPage<Props> = async ({ searchParams }) => {
   const session = await getServerSession(authOptions);
-  console.log(session);
+  console.log(session, "llllllllllll");
   if (session) {
     redirect("/cart");
   }
+  console.log("callbackurl ", searchParams.callbackUrl);
+
   return (
     <LoginForm
       callbackUrl={searchParams.callbackUrl}

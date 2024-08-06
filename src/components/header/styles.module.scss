@@ -3,42 +3,98 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #a9a9a9;
-  border-bottom: 1px solid #eaeaea;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 1.5rem 2rem;
+  }
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1f2937;
   margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .nav {
   display: flex;
   gap: 1rem;
-}
+  flex-wrap: wrap;
+  justify-content: center;
 
-button.button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #010a13;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button.button:hover {
-  background-color: #4a4a4c;
-}
-
-@media (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    gap: 10px;
+  @media (min-width: 768px) {
+    justify-content: flex-end;
   }
+}
 
-  .logo {
-    margin-bottom: 0;
+.button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #bccfd8, #2575fc);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.productButton {
+  background-color: #3b82f6;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #2563eb;
+  }
+}
+
+.loginButton {
+  background-color: #10b981;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #059669;
+  }
+}
+
+.signupButton {
+  background-color: #8b5cf6;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #7c3aed;
+  }
+}
+
+.cartButton {
+  background-color: #f59e0b;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #d97706;
+  }
+}
+
+.logoutButton {
+  background-color: #ef4444;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #dc2626;
   }
 }

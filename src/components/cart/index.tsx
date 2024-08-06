@@ -102,7 +102,7 @@ const Cart = () => {
   console.log(cart);
 
   return (
-    <div>
+    <div className={styles.cart_container}>
       {cart.length === 0 ? (
         <p className={styles.msg}>Your cart is empty.</p>
       ) : (

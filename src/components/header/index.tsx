@@ -7,6 +7,7 @@ import { signOut, useSession } from "next-auth/react";
 export default function Header() {
   const { data: session, status } = useSession();
   const loading = status === "loading";
+  console.log(session, "kkkkkkkkkkkkkk");
   return (
     <header className={styles.header}>
       <Link href="/products">

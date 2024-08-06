@@ -46,7 +46,7 @@ const LoginForm: FC<Props> = ({ callbackUrl, error }) => {
     await signIn("credentials", {
       email: values.email,
       password: values.password,
-      callbackUrl: callbackUrl || "/cart",
+      callbackUrl: callbackUrl || "/dashboard",
     });
   };
 

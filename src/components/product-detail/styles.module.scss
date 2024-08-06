@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1.5rem 5.5rem;
+  background-color: #f3f4e5;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
+    gap: 2rem;
   }
 
   .children {
@@ -17,11 +21,13 @@
 
 .content {
   padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 20rem;
 }
@@ -36,22 +42,26 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
 }
 
 .card__content__text {
-  font-size: 2.25rem /* 36px */;
-  line-height: 2.5rem /* 40px */;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 600;
+  color: #1f2937;
 }
 
 .title {
-  font-size: medium;
-  color: #334155;
+  font-size: 1rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: x-large;
+    font-size: 1.25rem;
   }
 }
 
@@ -59,55 +69,62 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .reviews {
-  color: gray;
+  color: #6b7280;
 }
 
 .description {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: small;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  color: #4b5563;
 }
 
 .category,
 .stock,
 .brand {
-  font-weight: bold;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 .category_name,
 .brand_name {
   text-transform: capitalize;
+  color: #4b5563;
 }
 
 .category_container,
 .brand_container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-button.button {
+.button {
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border: none;
-  background-color: #0070f3;
-  color: #fff;
-  border-radius: 5px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 0.375rem;
   cursor: pointer;
-}
+  font-weight: 500;
+  transition: all 0.3s ease;
 
-button.button:hover {
-  background-color: #005bb5;
+  &:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .price {
-  font-weight: bold;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 .price_num {
-  color: red;
+  color: #ef4444;
 }
 
 .price_container {
@@ -115,8 +132,8 @@ button.button:hover {
 }
 
 .discount {
-  font-size: smaller;
-  color: green;
+  font-size: 0.875rem;
+  color: #10b981;
 }
 
 .stock_container {
